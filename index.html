@@ -25,24 +25,45 @@
         <div class="container">
             <h2>OSINT Research Tools</h2>
             
+            <!-- Discord OSINT Tool -->
+            <div class="tool-card discord-card">
+                <h3>💬 Discord User Intelligence</h3>
+                <p>Analyze Discord users - username history, account age, public connections, and social links</p>
+                <input type="text" id="discordInput" placeholder="Enter Discord User ID (e.g., 123456789012345678) or Username#0000">
+                <button onclick="analyzeDiscord()">Analyze Discord User</button>
+                <div id="discordResults" class="results"></div>
+            </div>
+
+            <!-- Threat Actor / Breach Attribution Tool -->
+            <div class="tool-card breach-card">
+                <h3>⚠️ Threat Actor & Breach Attribution</h3>
+                <p>Check if a username/handle is associated with known breaches, hacks, or cybercrime activities</p>
+                <input type="text" id="threatActorInput" placeholder="Enter username, handle, or alias">
+                <button onclick="analyzeThreatActor()">Check Threat Intelligence</button>
+                <div id="threatActorResults" class="results"></div>
+            </div>
+
+            <!-- Username Checker -->
             <div class="tool-card">
-                <h3>Username Availability Checker</h3>
+                <h3>🔎 Username Availability Checker</h3>
                 <p>Check if a username is available across multiple platforms</p>
                 <input type="text" id="usernameInput" placeholder="Enter username to check">
                 <button onclick="checkUsername()">Check Availability</button>
                 <div id="usernameResults" class="results"></div>
             </div>
 
+            <!-- Domain Lookup -->
             <div class="tool-card">
-                <h3>Domain Information Lookup</h3>
+                <h3>🌐 Domain Information Lookup</h3>
                 <p>Analyze domain registration and public DNS records</p>
                 <input type="text" id="domainInput" placeholder="Enter domain (e.g., example.com)">
                 <button onclick="analyzeDomain()">Analyze Domain</button>
                 <div id="domainResults" class="results"></div>
             </div>
 
+            <!-- IP Geolocation -->
             <div class="tool-card">
-                <h3>IP Address Geolocation</h3>
+                <h3>📍 IP Address Geolocation</h3>
                 <p>Get approximate location and ISP information for an IP address</p>
                 <input type="text" id="ipInput" placeholder="Enter IP address">
                 <button onclick="analyzeIP()">Analyze IP</button>
