@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zyros-OSINT – Unlock the Power of Open-Source Intelligence</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Zyros-OSINT</h1>
+            <p class="tagline">Unlock the Power of Open-Source Intelligence</p>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Your Go-To Platform for OSINT</h2>
+            <p>Zyros-OSINT is your go-to platform for gathering, analyzing, and visualizing publicly available information. Whether you're a cybersecurity analyst, researcher, or investigative journalist, Zyros-OSINT provides tools and resources to make sense of the vast digital landscape.</p>
+        </div>
+    </section>
+
+    <section class="tools-section">
+        <div class="container">
+            <h2>OSINT Research Tools</h2>
+            
+            <div class="tool-card">
+                <h3>Username Availability Checker</h3>
+                <p>Check if a username is available across multiple platforms</p>
+                <input type="text" id="usernameInput" placeholder="Enter username to check">
+                <button onclick="checkUsername()">Check Availability</button>
+                <div id="usernameResults" class="results"></div>
+            </div>
+
+            <div class="tool-card">
+                <h3>Domain Information Lookup</h3>
+                <p>Analyze domain registration and public DNS records</p>
+                <input type="text" id="domainInput" placeholder="Enter domain (e.g., example.com)">
+                <button onclick="analyzeDomain()">Analyze Domain</button>
+                <div id="domainResults" class="results"></div>
+            </div>
+
+            <div class="tool-card">
+                <h3>IP Address Geolocation</h3>
+                <p>Get approximate location and ISP information for an IP address</p>
+                <input type="text" id="ipInput" placeholder="Enter IP address">
+                <button onclick="analyzeIP()">Analyze IP</button>
+                <div id="ipResults" class="results"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2>About Zyros-OSINT</h2>
+            <p>At Zyros-OSINT, we believe that knowledge is power. Our platform focuses on ethically collecting and organizing open-source data from publicly available sources, including websites, social media, news outlets, and public records. We provide intuitive tools for data aggregation, visualization, and analysis, helping users identify trends, connections, and actionable insights. Zyros-OSINT is designed to empower professionals, researchers, and enthusiasts to make informed decisions without compromising legal or ethical boundaries.</p>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="icon">📊</div>
+                    <h3>Comprehensive Data Collection</h3>
+                    <p>Aggregate information from public sources efficiently.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🔍</div>
+                    <h3>Advanced Analysis Tools</h3>
+                    <p>Identify patterns, connections, and insights in collected data.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">📈</div>
+                    <h3>Visualization & Mapping</h3>
+                    <p>Convert raw data into easy-to-understand graphs and networks.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">⚖️</div>
+                    <h3>Ethical & Legal</h3>
+                    <p>Focused solely on publicly available data and responsible OSINT practices.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">📚</div>
+                    <h3>Resource Hub</h3>
+                    <p>Guides, tutorials, and tips to enhance OSINT skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="use-cases">
+        <div class="container">
+            <h2>Who It's For</h2>
+            <div class="use-case-grid">
+                <div class="use-case-card">
+                    <h3>🛡️ Cybersecurity Analysts</h3>
+                    <p>Track threats, malicious domains, and emerging attack patterns.</p>
+                </div>
+                <div class="use-case-card">
+                    <h3>📰 Investigative Journalists</h3>
+                    <p>Collect and analyze open-source data for reporting.</p>
+                </div>
+                <div class="use-case-card">
+                    <h3>🎓 Researchers & Academics</h3>
+                    <p>Study trends, networks, and digital footprints.</p>
+                </div>
+                <div class="use-case-card">
+                    <h3>💡 Hobbyists & Learners</h3>
+                    <p>Learn OSINT techniques safely and effectively.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Get Started?</h2>
+            <p>Start exploring the world of open-source intelligence with Zyros-OSINT today – Discover insights, protect assets, and stay ahead of the curve.</p>
+            <button class="cta-button">Begin Your OSINT Journey</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Zyros-OSINT. All rights reserved. | Ethical OSINT Research Platform</p>
+            <p class="disclaimer">All tools are designed for educational and legitimate research purposes only. Users are responsible for complying with applicable laws and regulations.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="visitor-logger.js"></script>
+</body>
+</html>
