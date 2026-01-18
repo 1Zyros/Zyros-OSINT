@@ -1,3 +1,6 @@
+/* ============================================
+   RESET & BASE STYLES
+   ============================================ */
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +20,10 @@ body {
     padding: 2rem;
 }
 
+
+/* ============================================
+   HEADER
+   ============================================ */
 header {
     background: rgba(0, 0, 0, 0.5);
     padding: 2rem 0;
@@ -36,6 +43,10 @@ header h1 {
     color: #a0a0a0;
 }
 
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
 .hero {
     padding: 4rem 0;
     text-align: center;
@@ -54,6 +65,10 @@ header h1 {
     color: #c0c0c0;
 }
 
+
+/* ============================================
+   TOOLS SECTION
+   ============================================ */
 .tools-section {
     padding: 3rem 0;
 }
@@ -72,6 +87,33 @@ header h1 {
     padding: 2rem;
     margin-bottom: 2rem;
     border: 1px solid rgba(0, 212, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.tool-card:hover {
+    border-color: #00d4ff;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Discord card special styling */
+.discord-card {
+    border: 1px solid rgba(88, 101, 242, 0.4);
+}
+
+.discord-card:hover {
+    border-color: #5865F2;
+    box-shadow: 0 0 25px rgba(88, 101, 242, 0.3);
+}
+
+/* Breach/Threat Actor card special styling */
+.breach-card {
+    border: 1px solid rgba(255, 69, 58, 0.4);
+}
+
+.breach-card:hover {
+    border-color: #ff453a;
+    box-shadow: 0 0 25px rgba(255, 69, 58, 0.3);
 }
 
 .tool-card h3 {
@@ -85,6 +127,7 @@ header h1 {
     margin-bottom: 1rem;
 }
 
+/* Input Fields */
 input[type="text"] {
     width: 70%;
     padding: 1rem;
@@ -102,6 +145,11 @@ input[type="text"]:focus {
     box-shadow: 0 0 15px rgba(0, 212, 255, 0.3);
 }
 
+input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Buttons */
 button {
     padding: 1rem 2rem;
     background: linear-gradient(135deg, #00d4ff, #0099cc);
@@ -120,6 +168,11 @@ button:hover {
     transform: translateY(-2px);
 }
 
+button:active {
+    transform: translateY(0);
+}
+
+/* Results Display */
 .results {
     margin-top: 1.5rem;
     padding: 1rem;
@@ -128,6 +181,10 @@ button:hover {
     min-height: 50px;
 }
 
+
+/* ============================================
+   ABOUT SECTION
+   ============================================ */
 .about {
     padding: 4rem 0;
     background: rgba(0, 0, 0, 0.3);
@@ -148,6 +205,10 @@ button:hover {
     text-align: center;
 }
 
+
+/* ============================================
+   FEATURES SECTION
+   ============================================ */
 .features {
     padding: 4rem 0;
 }
@@ -196,6 +257,10 @@ button:hover {
     color: #a0a0a0;
 }
 
+
+/* ============================================
+   USE CASES SECTION
+   ============================================ */
 .use-cases {
     padding: 4rem 0;
     background: rgba(0, 0, 0, 0.3);
@@ -220,6 +285,12 @@ button:hover {
     border-radius: 15px;
     padding: 2rem;
     border: 1px solid rgba(0, 212, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.use-case-card:hover {
+    border-color: #00d4ff;
+    transform: translateY(-3px);
 }
 
 .use-case-card h3 {
@@ -232,6 +303,10 @@ button:hover {
     color: #a0a0a0;
 }
 
+
+/* ============================================
+   CTA SECTION
+   ============================================ */
 .cta {
     padding: 4rem 0;
     text-align: center;
@@ -263,6 +338,10 @@ button:hover {
     box-shadow: 0 0 40px rgba(0, 255, 204, 0.6);
 }
 
+
+/* ============================================
+   FOOTER
+   ============================================ */
 footer {
     background: rgba(0, 0, 0, 0.7);
     padding: 2rem 0;
@@ -280,4 +359,44 @@ footer p {
     font-size: 0.9rem;
     color: #808080;
     font-style: italic;
+}
+
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+    
+    input[type="text"] {
+        width: 100%;
+        margin-bottom: 1rem;
+        margin-right: 0;
+    }
+    
+    button {
+        width: 100%;
+    }
+    
+    .container {
+        padding: 1rem;
+    }
+}
+
+
+/* ============================================
+   LINK STYLES
+   ============================================ */
+a {
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    opacity: 0.8;
 }
